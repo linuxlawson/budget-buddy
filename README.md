@@ -11,7 +11,7 @@ This will get you total costs and, remainder of monthly income.
 
 Two more questions and click 'remainder' and done.  
 
-All fields must be filled in, even if with 0, else: wont work.  
+Note: All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
   
