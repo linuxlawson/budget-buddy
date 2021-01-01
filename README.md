@@ -1,7 +1,7 @@
 # budget-buddy
 GUI Budget Program  
 
-Same as original buddy program but with a graphical user interface (GUI).  
+Same as original [buddy](https://github.com/linuxlawson/buddy) program but with a graphical user interface (GUI).  
 
 Calculates Income and Expenses on a Monthly Basis.  
 **Monthly Income - Expenses = Total**  
