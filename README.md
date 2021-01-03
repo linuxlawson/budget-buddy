@@ -14,6 +14,9 @@ Two more questions and click 'remainder' and done.
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
+<br><br>
+
+<img src="https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square" alt="made with python">
   
     
 
