@@ -12,17 +12,19 @@ except:
 
 root = tk.Tk()
 root.title("Budget Buddy")
-root.geometry("508x712")
+root.geometry("508x714")
 root.option_add("*Font", "TkDefaultFont 9")
-root.config(bg='black')
+root.config(bg='silver')
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
 
 
 #Main Frame
-mainframe = tk.Frame(root, bd=1, relief='flat')
-mainframe.grid(sticky='ns')
+mainframe = tk.Frame(root, bd=0, highlightbackground="black", 
+                    highlightcolor="black", 
+                    highlightthickness=2, relief='flat')
+mainframe.grid(sticky='n')
 
 
 #labels
@@ -34,7 +36,7 @@ lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#BA0F0F')
 lab2.grid(row=2, column=0, sticky='nw', padx=12, pady=4)
 lab3 = tk.Label(mainframe, text="Numbers Only", fg='#BA0F0F')
 lab3.grid(row=2, column=1, sticky='nw', padx=8, pady=4)
-stat = tk.Label(mainframe, text=" If None Enter 0\n")
+stat = tk.Label(mainframe, text=" If None Enter 0\n", fg='#BA0F0F')
 stat.grid(row=2, column=2,  sticky='new', padx=8, pady=4)
 
 
@@ -50,15 +52,15 @@ def getRemains():
 myRemains=tk.StringVar();
 
 
-def new_Total():
+def new_Remains():
     new = int(a12.get())-int(a14.get())+int(a15.get())
-    newTotal.set(new)
-newTotal=tk.StringVar();
+    newRemains.set(new)
+newRemains=tk.StringVar();
 
 
 def banked():
-    ban = tk.Label(mainframe, text=" ", fg="#B3B3B3")
-    ban.grid(row=16, column=2, sticky='nw', padx=0, pady=4)
+    ban = tk.Label(mainframe, text="", fg="#B3B3B3")
+    ban.grid(row=15, column=2, sticky='nw', padx=0, pady=4)
     ban = a14.get()
 
 
@@ -141,13 +143,13 @@ a10.grid(row=13, column=1, sticky='nw', padx=8, pady=4)
 a10.config(state='readonly')
 total = a10.get()
 
-#remainder
+#remains
 q12 = tk.Label(mainframe, text="\t\tRemainder:\n\n")
 q12.grid(row=14, column=0,  sticky='nw', padx=8, pady=4)
 a12 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=myRemains)
 a12.grid(row=14, column=1, sticky='nw', padx=8, pady=4)
 a12.config(state='readonly')
-remainder = a12.get()
+remains = a12.get()
 
 
 #intosavings
@@ -168,17 +170,20 @@ addit = a15.get()
 #new remainder
 q16 = tk.Label(mainframe, text="\t\tNew Remainder:\n\n")
 q16.grid(row=17, column=0,  sticky='nw', padx=8, pady=4)
-a16 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=newTotal)
+a16 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=newRemains)
 a16.grid(row=17, column=1, sticky='nw', padx=8, pady=4)
 a16.config(state='readonly', bg='yellow')
-newtotal = a16.get()
+newremains = a16.get()
+
+spacer = tk.Label(mainframe, text="")
+spacer.grid(row=18, column=0,  sticky='nw', padx=12, pady=4)
 
 
 #buttons (column 2)
 b1 = tk.Button(mainframe, text="Total Costs ", command=lambda: [getTotal(), getRemains()])
 b1.grid(row=13, column=2, sticky='nw', padx=28, pady=2)
 
-b2 = tk.Button(mainframe, text="Remainder ", command=lambda: [new_Total(), banked()])
+b2 = tk.Button(mainframe, text="Remainder ", command=lambda: [new_Remains(), banked()])
 b2.grid(row=17, column=2, sticky='nw', padx=28, pady=2)
 
 
