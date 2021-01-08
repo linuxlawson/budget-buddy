@@ -3,6 +3,8 @@
 # Income/Expenses Program
 # Written by David Lawson
 
+#Uses grid manager, if editing
+#pay attention to row/column #'s
 
 try:
     import Tkinter as tk
@@ -12,7 +14,7 @@ except:
 
 root = tk.Tk()
 root.title("Budget Buddy")
-root.geometry("508x714")
+root.geometry("510x710")
 root.option_add("*Font", "TkDefaultFont 9")
 root.config(bg='silver')
 root.columnconfigure(0, weight=1)
@@ -36,7 +38,7 @@ lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#BA0F0F')
 lab2.grid(row=2, column=0, sticky='nw', padx=12, pady=4)
 lab3 = tk.Label(mainframe, text="Numbers Only", fg='#BA0F0F')
 lab3.grid(row=2, column=1, sticky='nw', padx=8, pady=4)
-stat = tk.Label(mainframe, text=" If None Enter 0\n", fg='#BA0F0F')
+stat = tk.Label(mainframe, text=" If None Enter 0", fg='#BA0F0F')
 stat.grid(row=2, column=2,  sticky='new', padx=8, pady=4)
 
 
@@ -67,7 +69,7 @@ def banked():
 #income
 incq = tk.Label(mainframe, text="Monthly Income:\n\n")
 incq.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
-inca = tk.Entry(mainframe, bd=1, width='8', justify='right', bg="#FFFF00")
+inca = tk.Entry(mainframe, bd=1, width='8', justify='right')
 inca.grid(row=3, column=1, sticky='nw', padx=8, pady=4)
 income = inca.get()
 
@@ -176,7 +178,7 @@ a16.config(state='readonly', bg='yellow')
 newremains = a16.get()
 
 spacer = tk.Label(mainframe, text="")
-spacer.grid(row=18, column=0,  sticky='nw', padx=12, pady=4)
+spacer.grid(row=18, column=0,  sticky='nw', padx=12, pady=8)
 
 
 #buttons (column 2)
