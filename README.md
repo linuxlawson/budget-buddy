@@ -8,7 +8,7 @@ Calculates Income and Expenses on a Monthly Basis.
 **Monthly Income - Expenses = Total**  
 
 Click on 'Total Costs' when you get to that point.  
-This will get you total costs and, remainder of monthly income.
+This will get you total costs (for the month) and, the remainder of monthly income.
 
 Two more questions and click 'remainder' and done.  
 
