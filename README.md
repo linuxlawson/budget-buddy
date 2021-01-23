@@ -1,5 +1,6 @@
 # budget-buddy
-GUI Budget Program  
+GUI Budget Program.  
+A money management tool.  
 
 Same as original [buddy](https://github.com/linuxlawson/buddy) program but with a graphical user interface (GUI).  
 
