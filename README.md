@@ -15,6 +15,9 @@ Two more questions and click 'remainder' and done.
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
+Also, this version does not have ability to save files like the [cli version](https://github.com/linuxlawson/buddy) (maybe one day).  
+Its more of a quick reference type thing.
+
 <br><br>
 
 <img src="https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square" alt="made with python">
