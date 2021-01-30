@@ -10,7 +10,7 @@ Calculates Income and Expenses on a Monthly Basis.
 Click on 'Total Costs' when you get to that point.  
 This will get you total costs (for the month) and, the remainder of monthly income.
 
-Two more questions and click 'remainder' and done.  
+Fill in two more fields and click 'remainder' and done.  
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
