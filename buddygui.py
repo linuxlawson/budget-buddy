@@ -40,6 +40,7 @@ stat = tk.Label(mainframe, text=" If None Enter 0", fg='#BA0F0F')
 stat.grid(row=2, column=2,  sticky='new', padx=8, pady=4)
 
 
+#functions
 def getTotal():
     res = int(a1.get())+int(a2.get())+int(a3.get())+int(a4.get())+int(a5.get())+int(a6.get())+int(a7.get())+int(a8.get())+int(a9.get())
     myTotal.set(res)
@@ -58,7 +59,7 @@ def new_Remains():
 newRemains=tk.StringVar();
 
 
-def clear():
+def clear_fields():
 	inca.delete('0', 'end')
 	a1.delete('0', 'end')
 	a2.delete('0', 'end')
@@ -74,12 +75,11 @@ def clear():
 	a14.delete('0', 'end')
 	a15.delete('0', 'end')
 	a16.delete('0', 'end')
+	myTotal.set("")
+	myRemains.set("")
+	newRemains.set("")
+	inca.focus_set()
 
-
-def clear_fields():
-    myTotal.set("")
-    myRemains.set("")
-    newRemains.set("")
 
 
 #file menu
@@ -142,7 +142,7 @@ this will show New Remainder of income.
     win.wait_window()
 
 
-
+#Labels/Entry Fields
 #income
 incq = tk.Label(mainframe, text="Monthly Income:\n\n")
 incq.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
@@ -266,6 +266,8 @@ b1.grid(row=13, column=2, sticky='nw', padx=28, pady=2)
 b2 = tk.Button(mainframe, text="Remainder ", command=new_Remains)
 b2.grid(row=17, column=2, sticky='nw', padx=28, pady=2)
 
+b3 = tk.Button(mainframe, text="Clear Fields", command=clear_fields)
+b3.grid(row=4, column=2, sticky='nw', padx=28, pady=2)
 
 
 #Menubar
