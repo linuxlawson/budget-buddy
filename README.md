@@ -7,10 +7,11 @@ Same as original [buddy](https://github.com/linuxlawson/buddy) program but with 
 Calculates Income and Expenses on a Monthly Basis.  
 **Monthly Income - Expenses = Total**  
 
-Click on 'Total Costs' when you get to that point.  
-This will get you total costs (for the month) and, the remainder of monthly income.
+**Instructions** (pretty self explanatory):  
+Click on 'Total Costs' after filling in expenses fields.  
+This will get you 'Total Costs' (for the month) and, the 'Remainder' of monthly income.
 
-Fill in two more fields and click 'remainder' and done.  
+Fill in two more fields and click 'Remainder' of monthy income. Done.  
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
