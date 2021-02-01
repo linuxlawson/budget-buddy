@@ -16,7 +16,7 @@ Fill in two more fields and click 'Remainder' of monthy income. Done.
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
-Also, this version does not have ability to save files like the [cli version](https://github.com/linuxlawson/buddy) (maybe one day).  
+Also, this version does not have ability to save files like the [cli version](https://github.com/linuxlawson/buddy) (yet).  
 Its more of a quick reference type thing.
 
 <br><br>
