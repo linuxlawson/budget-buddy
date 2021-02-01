@@ -11,7 +11,7 @@ Calculates Income and Expenses on a Monthly Basis.
 Click on 'Total Costs' after filling in expenses fields.  
 This will get you 'Total Costs' (for the month) and, the 'Remainder' of monthly income.
 
-Fill in two more fields and click 'Remainder' of monthy income. Done.  
+Fill in two more fields and click 'Remainder'. Done.  
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
