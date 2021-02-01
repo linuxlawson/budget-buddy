@@ -7,7 +7,7 @@ Same as original [buddy](https://github.com/linuxlawson/buddy) program but with 
 Calculates Income and Expenses on a Monthly Basis.  
 **Monthly Income - Expenses = Total**  
 
-**Instructions** (pretty self explanatory):  
+**Instructions:** (pretty self explanatory)  
 Click on 'Total Costs' after filling in expenses fields.  
 This will get you 'Total Costs' (for the month) and, the 'Remainder' of monthly income.
 
