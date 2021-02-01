@@ -16,7 +16,7 @@ Fill in two more fields and click 'Remainder'. Done.
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
-Also, this version does not have ability to save files like the [cli version](https://github.com/linuxlawson/buddy) (yet).  
+Also, this version does not have ability to save files like the [cli version](https://github.com/linuxlawson/buddy). (yet)  
 
 <br><br>
 
