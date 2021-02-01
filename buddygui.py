@@ -278,7 +278,7 @@ root.config(menu=menu, bd=2)
 filemenu = tk.Menu(menu, tearoff=0)
 menu.add_cascade(label="File ", menu=filemenu)
 filemenu.add_command(label="Clear Fields", 
-                    command=lambda: [clear(), clear_fields()],
+                    command=clear_fields,
                     accelerator="".rjust(2))
 filemenu.add_command(label="Exit", 
                     command=exit_com, underline=1,
