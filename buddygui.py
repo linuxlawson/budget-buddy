@@ -32,12 +32,12 @@ lab = tk.Label(mainframe, text="\nBudget Buddy", font='Arial 10 bold')
 lab.grid(row=0, column=0, sticky='nw', padx=12, pady=4)
 lab1 = tk.Label(mainframe, text="A Money Management Tool\n\n")
 lab1.grid(row=1, column=0, sticky='nw', padx=12, pady=4)
-lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#BA0F0F')
+lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#008000')
 lab2.grid(row=2, column=0, sticky='nw', padx=12, pady=4)
-lab3 = tk.Label(mainframe, text="Numbers Only", fg='#BA0F0F')
-lab3.grid(row=2, column=1, sticky='nw', padx=8, pady=4)
-stat = tk.Label(mainframe, text=" If None Enter 0", fg='#BA0F0F')
-stat.grid(row=2, column=2,  sticky='new', padx=8, pady=4)
+lab3 = tk.Label(mainframe, text="Numbers Only", fg='#008000')
+lab3.grid(row=2, column=1, sticky='nw', padx=6, pady=4)
+stat = tk.Label(mainframe, text=" If None Enter 0", fg='#008000')
+stat.grid(row=2, column=2,  sticky='new', padx=6, pady=4)
 
 
 #functions
