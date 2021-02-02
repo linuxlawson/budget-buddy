@@ -20,7 +20,7 @@ Will not do decimals at this time, whole numbers only.
 Ideally, you should create a folder to save files to.  
 Default extension is .txt so no need to add extension.  
 
-Tested and working on Linux
+Tested on Linux
 
 <br><br>
 
