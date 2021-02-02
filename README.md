@@ -16,7 +16,11 @@ Fill in two more fields and click 'Remainder'. Done.
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
-Also, this version does not have ability to save files like the [cli version](https://github.com/linuxlawson/buddy). (yet)  
+**Update:** Budget Buddy can now save input to a text file.  
+Ideally, you should create a folder to save files to.  
+Default extension is .txt so no need to add extension.  
+
+Tested and working on Linux
 
 <br><br>
 
