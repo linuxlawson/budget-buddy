@@ -1,4 +1,4 @@
-# budget-buddy
+## budget-buddy
 GUI version of buddy    
 A money management tool.  
 
