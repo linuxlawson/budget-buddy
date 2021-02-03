@@ -19,7 +19,6 @@ root.option_add("*Font", "TkDefaultFont 9")
 root.config(bg='silver')
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
-current_file = None
 
 
 #Main Frame
@@ -38,9 +37,9 @@ lab1.grid(row=1, column=0, sticky='nw', padx=12, pady=4)
 lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#008000')
 lab2.grid(row=2, column=0, sticky='nw', padx=12, pady=4)
 lab3 = tk.Label(mainframe, text="Numbers Only", fg='#008000')
-lab3.grid(row=2, column=1, sticky='nw', padx=8, pady=4)
+lab3.grid(row=2, column=1, sticky='nw', padx=6, pady=4)
 stat = tk.Label(mainframe, text=" If None Enter 0", fg='#008000')
-stat.grid(row=2, column=2,  sticky='new', padx=8, pady=4)
+stat.grid(row=2, column=2,  sticky='new', padx=6, pady=4)
 
 
 #functions
@@ -62,7 +61,7 @@ def new_Remains():
 newRemains=tk.StringVar();
 
 
-def clear_fields():
+def clear_fields(event=None):
 	inca.delete('0', 'end')
 	a1.delete('0', 'end')
 	a2.delete('0', 'end')
@@ -107,8 +106,8 @@ def save_com(event=None):
     file = tkFileDialog.asksaveasfile(mode='w', defaultextension='.txt',
     filetypes = (("Text Files", "*.txt"),("All Files", "*.*")))
     if file:
-        file.write("\n\t===YOUR INFO===     " + "\n\n")
-        file.write("\n\tMonthly Inome:       " + (inca.get().rjust(4)) + "\n\n")
+        file.write("\n\tBudget Buddy Results     " + "\n\n")
+        file.write("\n\tMonthly Income:      " + (inca.get().rjust(4)) + "\n\n")
         file.write("\t  Rent:              " + (a1.get().rjust(4)) + "\n")
         file.write("\t  Consumers:         " + (a2.get().rjust(4)) + "\n")
         file.write("\t  Internet/TV:       " + (a3.get().rjust(4)) + "\n")
@@ -310,15 +309,13 @@ filemenu = tk.Menu(menu, tearoff=0)
 menu.add_cascade(label="File ", menu=filemenu)
 filemenu.add_command(label="Clear Fields", 
                     command=clear_fields,
-                    accelerator="".rjust(2))
-                    
+                    accelerator="Ctrl+C ".rjust(8))
 filemenu.add_command(label="Save As", 
                     command=save_com,
-                    accelerator="".rjust(2))                    
-                    
+                    accelerator="Ctrl+S ".rjust(8))                    
 filemenu.add_command(label="Exit", 
                     command=exit_com, underline=1,
-                    accelerator="Ctrl+Q".rjust(2))                   
+                    accelerator="Ctrl+Q ".rjust(8))                   
 
 #Helpmenu
 helpmenu = tk.Menu(menu, tearoff=0)
@@ -327,7 +324,9 @@ helpmenu.add_command(label="About", command=about_com)
 helpmenu.add_command(label="Troubleshooting", command=trouble_com)
 
 
-
+#bindings
+root.bind_all('<Control-c>', clear_fields)
+root.bind_all('<Control-s>', save_com)
 root.bind_all('<Control-q>', exit_com)
 
 root.protocol("WM_DELETE_WINDOW")
