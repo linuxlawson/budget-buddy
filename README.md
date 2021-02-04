@@ -4,7 +4,7 @@ A money management tool.
 
 Same as original [buddy](https://github.com/linuxlawson/buddy) program but with a graphical user interface (GUI).  
 
-**Update:** Budget Buddy can now save input to a text file.  
+**Update:** Budget Buddy can now save results to a text file.  
 Ideally, you should create a folder to save files to.  
 Important: Default extension is .txt so no need to add extension.  
 
