@@ -1,0 +1,25 @@
+
+	Budget Buddy Results     
+
+	Month: February
+
+
+	Monthly Income:       555
+
+	  Rent:                 5
+	  Consumers:            5
+	  Internet/TV:          5
+	  Car Insurance:        5
+	  Food/Groceries:       5
+	  Gas:                  5
+	  Personal Items:       5
+	  Cell Phone:           5
+	  Other Expenses:       5
+
+	      Total Costs:     45
+	      Remainder:      510
+
+	Into Savings Acct:    110
+	Additional Income:      0
+
+	      New Remainder:  400
