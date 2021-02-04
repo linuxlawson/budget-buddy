@@ -12,10 +12,11 @@ Calculates Income and Expenses on a Monthly Basis.
 **Monthly Income - Expenses = Total**  
 
 **Instructions:** (pretty self explanatory)  
-Click on 'Total Costs' after filling in expenses fields.  
-This will get you 'Total Costs' (for the month) and, the 'Remainder' of monthly income.
+Click on 'Total Costs' after filling in All fields.  
+This will get you 'Total Costs' and the 'Remainder' of monthly income.
 
-Fill in two more fields and click 'Remainder'. Done.  
+Fill in two more fields (or enter 0) and click 'Remainder'. Done.  
+And there you have it, a rough estimate of your monthly expenses.
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
