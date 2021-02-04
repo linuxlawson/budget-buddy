@@ -16,7 +16,7 @@ Click on 'Total Costs' after filling in All fields.
 This will get you 'Total Costs' and the 'Remainder' of monthly income.
 
 Fill in two more fields (or enter 0) and click 'Remainder'. Done.  
-And there you have it, a rough estimate of your monthly expenses.
+And there you have it, a rough estimate of monthly expenses.
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
