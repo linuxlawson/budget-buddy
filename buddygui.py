@@ -14,7 +14,7 @@ except:
 
 root = tk.Tk()
 root.title("Budget Buddy")
-root.geometry("510x710")
+root.geometry("510x636")
 root.option_add("*Font", "TkDefaultFont 9")
 root.config(bg='silver')
 root.columnconfigure(0, weight=1)
@@ -30,16 +30,24 @@ mainframe.grid(sticky='n')
 
 
 #labels
-lab = tk.Label(mainframe, text="\nBudget Buddy", font='Arial 10 bold')
-lab.grid(row=0, column=0, sticky='nw', padx=12, pady=4)
-lab1 = tk.Label(mainframe, text="A Money Management Tool\n\n")
+lab = tk.Label(mainframe, text="Budget Buddy", font='Arial 10 bold')
+lab.grid(row=0, column=0, sticky='nw', padx=12, pady=6)
+lab1 = tk.Label(mainframe, text="A Money Management Tool\n")
 lab1.grid(row=1, column=0, sticky='nw', padx=12, pady=4)
+
+#month
+mon = tk.Label(mainframe, text="Month:\n")
+mon.grid(row=2, column=0,  sticky='nw', padx=12, pady=4)
+mon = tk.Entry(mainframe, bd=1, width='11', justify='left')
+mon.grid(row=2, column=0, sticky='n', padx=2, pady=4)
+month = mon.get()
+
 lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#008000')
-lab2.grid(row=2, column=0, sticky='nw', padx=12, pady=4)
+lab2.grid(row=3, column=0, sticky='nw', padx=12, pady=4)
 lab3 = tk.Label(mainframe, text="Numbers Only", fg='#008000')
-lab3.grid(row=2, column=1, sticky='nw', padx=6, pady=4)
+lab3.grid(row=3, column=1, sticky='nw', padx=6, pady=4)
 stat = tk.Label(mainframe, text=" If None Enter 0", fg='#008000')
-stat.grid(row=2, column=2,  sticky='new', padx=6, pady=4)
+stat.grid(row=3, column=2,  sticky='new', padx=6, pady=4)
 
 
 #functions
@@ -106,7 +114,10 @@ def save_com(event=None):
     file = tkFileDialog.asksaveasfile(mode='w', defaultextension='.txt',
     filetypes = (("Text Files", "*.txt"),("All Files", "*.*")))
     if file:
-        file.write("\n\tBudget Buddy Results     " + "\n\n")
+        file.write("\n\tBudget Buddy Results     " + "\n")
+        
+        file.write("\n\tMonth: " + (mon.get()) + "\n\n")
+        
         file.write("\n\tMonthly Income:      " + (inca.get().rjust(4)) + "\n\n")
         file.write("\t  Rent:              " + (a1.get().rjust(4)) + "\n")
         file.write("\t  Consumers:         " + (a2.get().rjust(4)) + "\n")
@@ -125,7 +136,6 @@ def save_com(event=None):
         file.write("\tAdditional Income:   " + (a15.get().rjust(4)) + "\n\n")
         
         file.write("\t      New Remainder: " + (a16.get().rjust(4)) + "\n")
-
         file.close()
 
 
@@ -174,130 +184,130 @@ this will show New Remainder of income.
 
 #Labels/Entry Fields
 #income
-incq = tk.Label(mainframe, text="Monthly Income:\n\n")
-incq.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
+incq = tk.Label(mainframe, text="Monthly Income:\n")
+incq.grid(row=4, column=0,  sticky='nw', padx=12, pady=4)
 inca = tk.Entry(mainframe, bd=1, width='8', justify='right')
-inca.grid(row=3, column=1, sticky='nw', padx=8, pady=4)
+inca.grid(row=4, column=1, sticky='nw', padx=8, pady=4)
 income = inca.get()
 inca.focus_set()
 
 #rent
 q1 = tk.Label(mainframe, text="Rent:")
-q1.grid(row=4, column=0,  sticky='nw', padx=28, pady=4)
+q1.grid(row=5, column=0,  sticky='nw', padx=28, pady=3)
 a1 = tk.Entry(mainframe, bd=1, width='8', justify='right')
-a1.grid(row=4, column=1, sticky='nw', padx=8, pady=4)
+a1.grid(row=5, column=1, sticky='nw', padx=8, pady=3)
 rent = a1.get()
 
 #consumers
 q2 = tk.Label(mainframe, text="Consumers:")
-q2.grid(row=5, column=0,  sticky='nw', padx=28, pady=4)
+q2.grid(row=6, column=0,  sticky='nw', padx=28, pady=3)
 a2 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a2.grid(row=5, column=1, sticky='nw', padx=8, pady=4)
+a2.grid(row=6, column=1, sticky='nw', padx=8, pady=3)
 con = a2.get()
 
 #internet/tv
 q3 = tk.Label(mainframe, text="Internet/TV:")
-q3.grid(row=6, column=0,  sticky='nw', padx=28, pady=4)
+q3.grid(row=7, column=0,  sticky='nw', padx=28, pady=3)
 a3 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a3.grid(row=6, column=1, sticky='nw', padx=8, pady=4)
+a3.grid(row=7, column=1, sticky='nw', padx=8, pady=3)
 cable = a3.get()
 
 #car ins
 q4 = tk.Label(mainframe, text="Car Insurance:")
-q4.grid(row=7, column=0,  sticky='nw', padx=28, pady=4)
+q4.grid(row=8, column=0,  sticky='nw', padx=28, pady=3)
 a4 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a4.grid(row=7, column=1, sticky='nw', padx=8, pady=4)
+a4.grid(row=8, column=1, sticky='nw', padx=8, pady=3)
 carins = a4.get()
 
 #food
 q5 = tk.Label(mainframe, text="Food/Groceries:")
-q5.grid(row=8, column=0,  sticky='nw', padx=28, pady=4)
+q5.grid(row=9, column=0,  sticky='nw', padx=28, pady=3)
 a5 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a5.grid(row=8, column=1, sticky='nw', padx=8, pady=4)
+a5.grid(row=9, column=1, sticky='nw', padx=8, pady=3)
 food = a5.get()
 
 #gas
 q6 = tk.Label(mainframe, text="Gas:")
-q6.grid(row=9, column=0,  sticky='nw', padx=28, pady=4)
+q6.grid(row=10, column=0,  sticky='nw', padx=28, pady=3)
 a6 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a6.grid(row=9, column=1, sticky='nw', padx=8, pady=4)
+a6.grid(row=10, column=1, sticky='nw', padx=8, pady=3)
 gas = a6.get()
 
 #personal
 q7 = tk.Label(mainframe, text="Personal Items:")
-q7.grid(row=10, column=0,  sticky='nw', padx=28, pady=4)
+q7.grid(row=11, column=0,  sticky='nw', padx=28, pady=3)
 a7 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a7.grid(row=10, column=1, sticky='nw', padx=8, pady=4)
+a7.grid(row=11, column=1, sticky='nw', padx=8, pady=3)
 person = a7.get()
 
 #cell
 q8 = tk.Label(mainframe, text="Cell Phone:")
-q8.grid(row=11, column=0,  sticky='nw', padx=28, pady=4)
+q8.grid(row=12, column=0,  sticky='nw', padx=28, pady=3)
 a8 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a8.grid(row=11, column=1, sticky='nw', padx=8, pady=4)
+a8.grid(row=12, column=1, sticky='nw', padx=8, pady=3)
 cell = a8.get()
 
 #other
-q9 = tk.Label(mainframe, text="Other Expenses:\n\n")
-q9.grid(row=12, column=0,  sticky='nw', padx=28, pady=4)
+q9 = tk.Label(mainframe, text="Other Expenses:\n")
+q9.grid(row=13, column=0,  sticky='nw', padx=28, pady=3)
 a9 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a9.grid(row=12, column=1, sticky='nw', padx=8, pady=4)
+a9.grid(row=13, column=1, sticky='nw', padx=8, pady=3)
 other = a9.get()
 
 
 #total costs
 q10 = tk.Label(mainframe, text="\t\tTotal Costs:")
-q10.grid(row=13, column=0,  sticky='nw', padx=8, pady=4)
+q10.grid(row=14, column=0,  sticky='nw', padx=8, pady=4)
 a10 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=myTotal)
-a10.grid(row=13, column=1, sticky='nw', padx=8, pady=4)
+a10.grid(row=14, column=1, sticky='nw', padx=8, pady=4)
 a10.config(state='readonly')
 total = a10.get()
 
 #remains
-q12 = tk.Label(mainframe, text="\t\tRemainder:\n\n")
-q12.grid(row=14, column=0,  sticky='nw', padx=8, pady=4)
+q12 = tk.Label(mainframe, text="\t\tRemainder:\n")
+q12.grid(row=15, column=0,  sticky='nw', padx=8, pady=4)
 a12 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=myRemains)
-a12.grid(row=14, column=1, sticky='nw', padx=8, pady=4)
+a12.grid(row=15, column=1, sticky='nw', padx=8, pady=4)
 a12.config(state='readonly')
 remains = a12.get()
 
 
 #intosavings
 q14 = tk.Label(mainframe, text="How much into savings account?")
-q14.grid(row=15, column=0,  sticky='nw', padx=12, pady=4)
+q14.grid(row=16, column=0,  sticky='nw', padx=12, pady=3)
 a14 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a14.grid(row=15, column=1, sticky='nw', padx=8, pady=4)
+a14.grid(row=16, column=1, sticky='nw', padx=8, pady=3)
 savings = a14.get()
 
 #additional
-q15 = tk.Label(mainframe, text="List all additional earned income:\n\n")
-q15.grid(row=16, column=0,  sticky='nw', padx=12, pady=4)
+q15 = tk.Label(mainframe, text="List all additional earned income:\n")
+q15.grid(row=17, column=0,  sticky='nw', padx=12, pady=3)
 a15 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
-a15.grid(row=16, column=1, sticky='nw', padx=8, pady=4)
+a15.grid(row=17, column=1, sticky='nw', padx=8, pady=3)
 addit = a15.get()
 
 
 #new remainder
-q16 = tk.Label(mainframe, text="\t\tNew Remainder:\n\n")
-q16.grid(row=17, column=0,  sticky='nw', padx=8, pady=4)
+q16 = tk.Label(mainframe, text="\t\tNew Remainder:\n")
+q16.grid(row=18, column=0,  sticky='nw', padx=8, pady=4)
 a16 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=newRemains)
-a16.grid(row=17, column=1, sticky='nw', padx=8, pady=4)
+a16.grid(row=18, column=1, sticky='nw', padx=8, pady=4)
 a16.config(state='readonly', bg='yellow')
 newremains = a16.get()
 
 spacer = tk.Label(mainframe, text="")
-spacer.grid(row=18, column=3,  sticky='nw', padx=12, pady=8)
+spacer.grid(row=19, column=3,  sticky='nw', padx=12, pady=8)
 
 
 #buttons (column 2)
 b1 = tk.Button(mainframe, text="Total Costs ", command=lambda: [getTotal(), getRemains()])
-b1.grid(row=13, column=2, sticky='nw', padx=28, pady=2)
+b1.grid(row=14, column=2, sticky='nw', padx=28, pady=0)
 
 b2 = tk.Button(mainframe, text="Remainder ", command=new_Remains)
-b2.grid(row=17, column=2, sticky='nw', padx=28, pady=2)
+b2.grid(row=18, column=2, sticky='nw', padx=28, pady=0)
 
 b3 = tk.Button(mainframe, text="Clear Fields", command=clear_fields)
-b3.grid(row=4, column=2, sticky='nw', padx=28, pady=2)
+b3.grid(row=5, column=2, sticky='nw', padx=28, pady=0)
 
 
 #Menubar
@@ -312,10 +322,10 @@ filemenu.add_command(label="Clear Fields",
                     accelerator="Ctrl+C ".rjust(8))
 filemenu.add_command(label="Save As", 
                     command=save_com,
-                    accelerator="Ctrl+S ".rjust(8))                    
+                    accelerator="Ctrl+S ".rjust(8))
 filemenu.add_command(label="Exit", 
                     command=exit_com, underline=1,
-                    accelerator="Ctrl+Q ".rjust(8))                   
+                    accelerator="Ctrl+Q ".rjust(8))
 
 #Helpmenu
 helpmenu = tk.Menu(menu, tearoff=0)
