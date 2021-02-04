@@ -6,7 +6,7 @@ Same as original [buddy](https://github.com/linuxlawson/buddy) program but with 
 
 **Update:** Budget Buddy can now save input to a text file.  
 Ideally, you should create a folder to save files to.  
-Default extension is .txt so no need to add extension.  
+Important: Default extension is .txt so no need to add extension.  
 
 Calculates Income and Expenses on a Monthly Basis.  
 **Monthly Income - Expenses = Total**  
