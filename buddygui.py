@@ -16,14 +16,14 @@ root = tk.Tk()
 root.title("Budget Buddy")
 root.geometry("510x636")
 root.option_add("*Font", "TkDefaultFont 9")
-root.config(bg='silver')
+#root.config(bg='silver')
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
-
+root.resizable(0,0)
 
 #Main Frame
 mainframe = tk.Frame(root, highlightcolor="#4D4D4D", 
-                    highlightbackground="#1A1A1A", 
+                    highlightbackground="#4D4D4D", 
                     highlightthickness=1, 
                     relief='flat')
 mainframe.grid(sticky='n')
@@ -41,6 +41,7 @@ mon.grid(row=2, column=0,  sticky='nw', padx=12, pady=4)
 mon = tk.Entry(mainframe, bd=1, width='11', justify='left')
 mon.grid(row=2, column=0, sticky='n', padx=2, pady=4)
 month = mon.get()
+mon.focus_set()
 
 lab2 = tk.Label(mainframe, text="Enter Income & Expenses", fg='#008000')
 lab2.grid(row=3, column=0, sticky='nw', padx=12, pady=4)
@@ -119,12 +120,12 @@ def save_com(event=None):
         file.write("\n\tMonth: " + (mon.get()) + "\n\n")
         
         file.write("\n\tMonthly Income:      " + (inca.get().rjust(4)) + "\n\n")
-        file.write("\t  Rent:              " + (a1.get().rjust(4)) + "\n")
-        file.write("\t  Consumers:         " + (a2.get().rjust(4)) + "\n")
+        file.write("\t  Rent/Mortgage:     " + (a1.get().rjust(4)) + "\n")
+        file.write("\t  Electricity:       " + (a2.get().rjust(4)) + "\n")
         file.write("\t  Internet/TV:       " + (a3.get().rjust(4)) + "\n")
         file.write("\t  Car Insurance:     " + (a4.get().rjust(4)) + "\n")
         file.write("\t  Food/Groceries:    " + (a5.get().rjust(4)) + "\n")
-        file.write("\t  Gas:               " + (a6.get().rjust(4)) + "\n")
+        file.write("\t  Gasoline:          " + (a6.get().rjust(4)) + "\n")
         file.write("\t  Personal Items:    " + (a7.get().rjust(4)) + "\n")
         file.write("\t  Cell Phone:        " + (a8.get().rjust(4)) + "\n")
         file.write("\t  Other Expenses:    " + (a9.get().rjust(4)) + "\n\n")
@@ -189,28 +190,27 @@ incq.grid(row=4, column=0,  sticky='nw', padx=12, pady=4)
 inca = tk.Entry(mainframe, bd=1, width='8', justify='right')
 inca.grid(row=4, column=1, sticky='nw', padx=8, pady=4)
 income = inca.get()
-inca.focus_set()
 
 #rent
-q1 = tk.Label(mainframe, text="Rent:")
+q1 = tk.Label(mainframe, text="Rent/Mortgage:")
 q1.grid(row=5, column=0,  sticky='nw', padx=28, pady=3)
 a1 = tk.Entry(mainframe, bd=1, width='8', justify='right')
 a1.grid(row=5, column=1, sticky='nw', padx=8, pady=3)
 rent = a1.get()
 
-#consumers
-q2 = tk.Label(mainframe, text="Consumers:")
+#electric
+q2 = tk.Label(mainframe, text="Electricity:")
 q2.grid(row=6, column=0,  sticky='nw', padx=28, pady=3)
 a2 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
 a2.grid(row=6, column=1, sticky='nw', padx=8, pady=3)
-con = a2.get()
+elec = a2.get()
 
 #internet/tv
 q3 = tk.Label(mainframe, text="Internet/TV:")
 q3.grid(row=7, column=0,  sticky='nw', padx=28, pady=3)
 a3 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
 a3.grid(row=7, column=1, sticky='nw', padx=8, pady=3)
-cable = a3.get()
+intv = a3.get()
 
 #car ins
 q4 = tk.Label(mainframe, text="Car Insurance:")
@@ -227,7 +227,7 @@ a5.grid(row=9, column=1, sticky='nw', padx=8, pady=3)
 food = a5.get()
 
 #gas
-q6 = tk.Label(mainframe, text="Gas:")
+q6 = tk.Label(mainframe, text="Gasoline:")
 q6.grid(row=10, column=0,  sticky='nw', padx=28, pady=3)
 a6 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
 a6.grid(row=10, column=1, sticky='nw', padx=8, pady=3)
@@ -292,7 +292,7 @@ q16 = tk.Label(mainframe, text="\t\tNew Remainder:\n")
 q16.grid(row=18, column=0,  sticky='nw', padx=8, pady=4)
 a16 = tk.Entry(mainframe, bd=1, width='8', justify='right', textvariable=newRemains)
 a16.grid(row=18, column=1, sticky='nw', padx=8, pady=4)
-a16.config(state='readonly', bg='yellow')
+a16.config(state='readonly')
 newremains = a16.get()
 
 spacer = tk.Label(mainframe, text="")
