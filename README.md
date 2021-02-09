@@ -5,7 +5,8 @@ A money management tool.
 Same as original [buddy](https://github.com/linuxlawson/buddy) program but with a graphical user interface (GUI).  
 
 **Note:** There are now 2 versions of this program in this repository.   
-The original budget buddy (buddygui.py) and a second version (buddygui2.py) which has more catagories/fields.  
+The original budget buddy (buddygui.py) and a second version (buddygui2.py)  
+which has more catagories/fields.  
 The 2nd version is more user-friendly as it covers more and should apply to most users.  
 Screenshots of both are in images folder.  
 
