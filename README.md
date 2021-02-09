@@ -24,7 +24,7 @@ Click on 'Total Costs' after filling in 'expenses' fields.
 This will get you 'Total Costs' and the 'Remainder' of monthly income.
 
 And there you have it, a rough estimate of your monthly expenses.  
-Don't let the results scare you, use it to your advantage. :moneybag:
+Don't let the results scare you, use it to your advantage. :smiley::moneybag:
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
