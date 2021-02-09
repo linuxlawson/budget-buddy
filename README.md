@@ -7,7 +7,7 @@ Same as original [buddy](https://github.com/linuxlawson/buddy) program but with 
 **Note:** There are now 2 versions of this program in this repository.   
 The original budget buddy (buddygui.py) and a second version (buddygui2.py)  
 which has more catagories/fields.  
-The 2nd version is more user-friendly as it covers more and will apply to most users.  
+The 2nd version is more general/user-friendly as it covers more and will apply to most users.  
 Screenshots of both are in images folder.  
 
 Budget Buddy (both versions) can now save results to a text file (example up there).  
