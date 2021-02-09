@@ -10,7 +10,7 @@ which has more catagories/fields.
 The 2nd version is more user-friendly as it covers more and should apply to most users.  
 Screenshots of both are in images folder.  
 
-Budget Buddy (both versions) can now save results to a text file.  
+Budget Buddy (both versions) can now save results to a text file (example up there).
 Ideally, you should create a folder to save files to.  
 **Important:** Default extension is .txt so no need to add extension.  
 
