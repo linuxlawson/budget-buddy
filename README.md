@@ -5,8 +5,8 @@ A money management tool.
 Same as original [buddy](https://github.com/linuxlawson/buddy) program but with a graphical user interface (GUI).  
 
 **Note:** There are now 2 versions of this program in this repository.   
-The original budget buddy (buddygui.py) and a second version (buddygui2.py) which has more labels/fields.  
-The 2nd version is more user-friendly as it covers more and applies to more users.  
+The original budget buddy (buddygui.py) and a second version (buddygui2.py) which has more catagories/fields.  
+The 2nd version is more user-friendly as it covers more and should apply to most users.  
 Screenshots of both are in images folder.  
 
 Budget Buddy (both versions) can now save results to a text file.  
@@ -27,6 +27,7 @@ Don't let the results scare you, use it to your advantage. :smiley:
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
+
 
 
 
