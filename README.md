@@ -14,7 +14,8 @@ Budget Buddy (both versions) can now save results to a text file (example up the
 Ideally, you should create a folder to save files to.  
 **Important:** Default extension is .txt so no need to add extension.  
 
-(i.e. Save As: files/july)
+Example:  
+Save As: files/july
 
 Calculates Income and Expenses on a Monthly Basis.  
 Monthly Income - Expenses = Total (and remainder)  
