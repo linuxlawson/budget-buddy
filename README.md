@@ -6,6 +6,7 @@ Same as original [buddy](https://github.com/linuxlawson/buddy) program but with 
 
 **Note:** Made another version (buddygui2.py) with more labels/fields.  
 This version is more general and/or more user-friendly as it pertains to more users.  
+Screenshot in images folder.  
 
 **Update:** Budget Buddy can now save results to a text file.  
 Ideally, you should create a folder to save files to.  
