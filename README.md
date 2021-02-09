@@ -22,15 +22,13 @@ Monthly Income - Expenses = Total (and remainder)
 
 **Instructions:** (pretty self explanatory)  
 Click on 'Total Costs' after filling in 'expenses' fields.  
-This will get 'Total Costs' and 'Remainder' of monthly income.
-
-And there you have it, a rough estimate of your monthly expenses.  
-Don't let the results scare you, use it to your advantage.  
+This will get 'Total Costs' and 'Remainder' of monthly income.  
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
 
-
+And there you have it, a rough estimate of your monthly expenses.  
+Don't let the results scare you, use it to your advantage.  
 
 <br>
 Tested on Linux
@@ -39,5 +37,3 @@ Tested on Linux
 <img src="https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square" alt="made with python">
   
     
-
-
