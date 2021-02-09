@@ -16,10 +16,13 @@ root = tk.Tk()
 root.title("Budget Buddy")
 root.geometry("510x636")
 root.option_add("*Font", "TkDefaultFont 9")
-#root.config(bg='silver')
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 root.resizable(0,0)
+
+height = root.winfo_screenheight()
+width = root.winfo_screenwidth()
+#print("Screen Size: %d x %d (pixels)" %(width, height))
 
 #Main Frame
 mainframe = tk.Frame(root, highlightcolor="#4D4D4D", 
@@ -53,7 +56,9 @@ stat.grid(row=3, column=2,  sticky='new', padx=6, pady=4)
 
 #functions
 def getTotal():
-    res = int(a1.get())+int(a2.get())+int(a3.get())+int(a4.get())+int(a5.get())+int(a6.get())+int(a7.get())+int(a8.get())+int(a9.get())
+    res = (int(a1.get())+int(a2.get())+int(a3.get())
+    +int(a4.get())+int(a5.get())+int(a6.get())
+    +int(a7.get())+int(a8.get())+int(a9.get()))
     myTotal.set(res)
 myTotal=tk.StringVar();
 
@@ -184,6 +189,9 @@ this will show New Remainder of income.
 
 
 #Labels/Entry Fields
+# q = question (label)
+# a = answer (entry field)
+
 #income
 incq = tk.Label(mainframe, text="Monthly Income:\n")
 incq.grid(row=4, column=0,  sticky='nw', padx=12, pady=4)
