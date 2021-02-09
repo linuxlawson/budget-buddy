@@ -10,7 +10,7 @@ which has more catagories/fields.
 The 2nd version is more user-friendly as it covers more and should apply to most users.  
 Screenshots of both are in images folder.  
 
-Budget Buddy (both versions) can now save results to a text file (example up there :point_up_2:).  
+Budget Buddy (both versions) can now save results to a text file (example up there).  
 Ideally, you should create a folder to save files to.  
 **Important:** Default extension is .txt so no need to add extension.  
 
@@ -25,7 +25,7 @@ Click on 'Total Costs' after filling in 'expenses' fields.
 This will get 'Total Costs' and 'Remainder' of monthly income.
 
 And there you have it, a rough estimate of your monthly expenses.  
-Don't let the results scare you, use it to your advantage. :smiley::moneybag:
+Don't let the results scare you, use it to your advantage.  
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
