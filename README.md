@@ -14,14 +14,14 @@ Budget Buddy (both versions) can now save results to a text file (example up the
 Ideally, you should create a folder to save files to.  
 **Important:** Default extension is .txt so no need to add extension.  
 
-(i.e. Save As: filesfolder/july)
+(i.e. Save As: files/july)
 
-Calculate Income and Expenses on a Monthly Basis.  
+Calculates Income and Expenses on a Monthly Basis.  
 Monthly Income - Expenses = Total (and remainder)  
 
 **Instructions:** (pretty self explanatory)  
 Click on 'Total Costs' after filling in 'expenses' fields.  
-This will get you 'Total Costs' and the 'Remainder' of monthly income.
+This will get 'Total Costs' and 'Remainder' of monthly income.
 
 And there you have it, a rough estimate of your monthly expenses.  
 Don't let the results scare you, use it to your advantage. :smiley::moneybag:
