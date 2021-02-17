@@ -20,9 +20,6 @@ Save As: files/july
 Calculates Income and Expenses on a Monthly Basis.  
 Monthly Income - Expenses = Total (and remainder)  
 
-**Instructions:** (pretty self explanatory)  
-Click on 'Total Costs' after filling in 'expenses' fields.  
-This will get 'Total Costs' and 'Remainder' of monthly income.  
 
 **Note:** All fields must be filled in, even if with 0, else: wont work.  
 Will not do decimals at this time, whole numbers only.  
