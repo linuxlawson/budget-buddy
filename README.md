@@ -15,7 +15,7 @@ Ideally, you should create a folder to save files to.
 **Important:** Default extension is .txt so no need to add extension.  
 
 Example:  
-Save As: files/july
+Save As: Documents/BudgetResults/july
 
 Calculates Income and Expenses on a Monthly Basis.  
 Monthly Income - Expenses = Total (and remainder)  
