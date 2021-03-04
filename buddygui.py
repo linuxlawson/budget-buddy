@@ -115,13 +115,14 @@ def save_com(event=None):
     file = tkFileDialog.asksaveasfile(mode='w', defaultextension='.txt',
     filetypes = (("Text Files", "*.txt"),("All Files", "*.*")))
     if file:
-        file.write("\n\tBudget Buddy Results     " + "\n")
+        file.write("\n")
+        file.write("\tBudget Buddy Results     " + "\n\n")
         
-        file.write("\n\tMonth: " + (mon.get()) + "\n\n")
+        file.write("\tMonth: " + (mon.get()) + "\n\n\n")
         
-        file.write("\n\tMonthly Income:      " + (inca.get().rjust(4)) + "\n\n")
+        file.write("\tMonthly Income:      " + (inca.get().rjust(4)) + "\n\n")
         file.write("\t  Rent/Mortgage:     " + (a1.get().rjust(4)) + "\n")
-        file.write("\t  Electricity:       " + (a2.get().rjust(4)) + "\n")
+        file.write("\t  Electric:          " + (a2.get().rjust(4)) + "\n")
         file.write("\t  Internet/TV:       " + (a3.get().rjust(4)) + "\n")
         file.write("\t  Car Insurance:     " + (a4.get().rjust(4)) + "\n")
         file.write("\t  Food/Groceries:    " + (a5.get().rjust(4)) + "\n")
@@ -136,7 +137,7 @@ def save_com(event=None):
         file.write("\tInto Savings Acct:   " + (a14.get().rjust(4)) + "\n")
         file.write("\tAdditional Income:   " + (a15.get().rjust(4)) + "\n\n")
         
-        file.write("\t      New Remainder: " + (a16.get().rjust(4)) + "\n")
+        file.write("\t    New Remainder:   " + (a16.get().rjust(4)) + "\n")
         file.close()
 
 
@@ -200,7 +201,7 @@ a1 = tk.Entry(mainframe, bd=1, width='8', justify='right')
 a1.grid(row=5, column=1, sticky='nw', padx=8, pady=3)
 
 #electric
-q2 = tk.Label(mainframe, text="Electricity:")
+q2 = tk.Label(mainframe, text="Electric:")
 q2.grid(row=6, column=0,  sticky='nw', padx=28, pady=3)
 a2 = tk.Entry(mainframe, bd=1,  width='8', justify='right')
 a2.grid(row=6, column=1, sticky='nw', padx=8, pady=3)
